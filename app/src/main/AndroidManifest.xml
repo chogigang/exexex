@@ -13,6 +13,24 @@
         android:theme="@style/Theme.RonaldoLecture"
         tools:targetApi="31">
         <activity
+            android:name=".Ronaldo_saudiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ronaldo_waterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ronaldo_realActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ronaldo_jubeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RonaldoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ronaldo_cute_Activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
