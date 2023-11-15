@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:src="@drawable/ronaldo_cute"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ronaldo_jube" />
+
+    <ImageView
+        android:src="@drawable/ronaldo_real"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <ImageView
+        android:src="@drawable/ronaldo_water"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+
+
+</LinearLayout>
+
+
+<!--
+
+LinearLayout
+
+일반적으로 옆에 빈공간이 있으면 가로로 차례대로 차곡차곡 빈공간에 레이아웃을 채워 나가는것
+
+
+Relative Layout
+
+옆으로 빈공간에 채워지는것이 아니라 겹칠수 있는 레이아웃
+
+
+Constraint Layout
+기존에 있던 항목 기준으로 100px 만큼 즉 설정한 공간만큼 띄워라고 설정을 하는 레이아웃
+
+
+
+-->
