@@ -12,15 +12,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"> <!-- match_parent 한줄을 다 사용한다.
         wrap_content  내용물들을 다 감싼 높이로 한다-->
+
+        <!-- caleType="center"  할당된 공간을 꽉 채울때 사용 -->
+        <!--   android:scaleType="fitXY" 이건 더 꽉 채운다.  -->
         <ImageView
 
             android:id="@+id/ronaldo_cute_image"
+            android:scaleType="center"
             android:src="@drawable/ronaldo_cute"
             android:layout_width="100dp"
             android:layout_height="100dp"/>
 
         <ImageView
             android:id="@+id/ronaldo_jude_image"
+            android:scaleType="center"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/ronaldo_jube" />
@@ -28,11 +33,13 @@
         <ImageView
             android:id="@+id/ronaldo_real_image"
             android:src="@drawable/ronaldo_real"
+            android:scaleType="center"
             android:layout_width="100dp"
             android:layout_height="100dp"/>
         <ImageView
             android:id="@+id/ronaldo_water_image"
             android:src="@drawable/ronaldo_water"
+            android:scaleType="fitXY"
             android:layout_width="100dp"
             android:layout_height="100dp"/>
     </LinearLayout>
@@ -43,6 +50,7 @@
         wrap_content  내용물들을 다 감싼 높이로 한다-->
         <ImageView
             android:id="@+id/ronaldo_saudi_image"
+            android:scaleType="fitXY"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/ronaldo_saudi" />
@@ -50,6 +58,7 @@
         <ImageView
             android:id="@+id/ronaldo_image"
             android:src="@drawable/ronaldo_"
+            android:scaleType="fitXY"
             android:layout_width="100dp"
             android:layout_height="100dp"/>
 
