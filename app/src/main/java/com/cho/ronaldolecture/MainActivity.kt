@@ -25,36 +25,49 @@ class MainActivity : AppCompatActivity() {
                 .show(); //사진을 클릭했을때 Tost메시지를 띄우는 명령어
 
             //2.화면이 클릭되면 다음화면으로  넘어가서 사진을 크게 보여줌
-            val intent = Intent(this, Ronaldo_cute_Activity::class.java)
+            // 하나의 엑티비티로 넘기기때문에 기존 하드코딩 자리는 주석
+//            val intent = Intent(this, Ronaldo_cute_Activity::class.java)
+            val intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data","cute") //화면상의 intent 데이터를 넘길때 사용 아름,키값
             startActivity(intent)
 
         }
         ronaldo_.setOnClickListener {
             Toast.makeText(this, "자랑스러운 날두형 ", Toast.LENGTH_LONG).show();
-            val intent = Intent(this, RonaldoActivity::class.java);
+            val intent = Intent(this, ImageInsideActivity::class.java)
+//            val intent = Intent(this, RonaldoActivity::class.java);
+            intent.putExtra("data","br")
             startActivity(intent);
 
         }
         ronaldo_jube.setOnClickListener {
             Toast.makeText(this, "siuuu ", Toast.LENGTH_LONG).show();
-            val intent = Intent(this, Ronaldo_jubeActivity::class.java);
+            val intent = Intent(this, ImageInsideActivity::class.java)
+//            val intent = Intent(this, Ronaldo_jubeActivity::class.java);
+            intent.putExtra("data","jube")
             startActivity(intent);
 
 
         }
         ronaldo_real.setOnClickListener {
             Toast.makeText(this, "진짜 신두형 ", Toast.LENGTH_LONG).show();
-            val intent = Intent(this, Ronaldo_realActivity::class.java);
+//            val intent = Intent(this, Ronaldo_realActivity::class.java);
+            val intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data","real")
             startActivity(intent);
         }
         ronaldo_water.setOnClickListener {
             Toast.makeText(this, "꼬북두", Toast.LENGTH_LONG).show();
-            val intent = Intent(this, Ronaldo_waterActivity::class.java);
+//            val intent = Intent(this, Ronaldo_waterActivity::class.java);
+            val intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data","water")
             startActivity(intent);
         }
         ronaldo_saudi.setOnClickListener {
             Toast.makeText(this, " 기름두 ", Toast.LENGTH_LONG).show();
-            val intent = Intent(this, Ronaldo_saudiActivity::class.java);
+//            val intent = Intent(this, Ronaldo_saudiActivity::class.java);
+            val intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data","saudi")
             startActivity(intent);
         }
 
