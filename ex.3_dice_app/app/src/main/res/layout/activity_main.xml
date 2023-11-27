@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008000"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="100dp"
+    >
+
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    android:textColor="@color/black"
+    android:text =" 인생 주사위 한방 "
+    android:textStyle="bold"
+    android:textSize="30sp"/>
+   <!-- sp 로 설정한 이유는 디바이스 글씨크기를 설정한 어르신들이 있을수 있다 sp는 디바이스 폰트 사이즈 따라간다.-->
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:weightSum="2"> <!-- 전채를 2로 나눔  3이면 3등분 -->
+
+    <ImageView
+        android:id="@+id/dice1"
+        android:src="@drawable/dice_1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"/> <!-- 반반씩 차지하고싶을때 -->
+
+    <ImageView
+        android:id="@+id/dice2"
+        android:src="@drawable/dice_1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>
+
+
+
+<Button
+    android:id="@+id/diceStartBtn"
+    android:text=" 도 박 "
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:textColor="@color/white"
+    android:layout_height="50dp"
+    android:layout_margin="50dp"/>
+
+
+</LinearLayout>
+
+</layout>
